@@ -1,0 +1,33 @@
+.PodcastPlatforms > p {
+  text-align: center;
+  font-weight: bold;
+}
+
+.podcast-platforms-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.podcast-platform {
+  text-align: center;
+  max-width: 5rem;
+  max-height: auto;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.podcast-platform-img {
+  max-width: 5rem;
+  max-height: auto;
+  border-radius: 25%;
+  transition: 0.2s;
+}
+
+.podcast-platform-img:hover {
+  transform: scale(1.15);
+}
+
+.podcast-platform p {
+  margin-top: 0.2rem;
+}
