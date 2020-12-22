@@ -29,6 +29,9 @@ class Footer extends Component {
               <FontAwesomeIcon className="footer-icon" icon={faEnvelope} />
             </a>
           </div>
+          <a href="mailto:itsoverforrealpod@gmail.com">
+            itsoverforrealpod@gmail.com
+          </a>
         </div>
       </footer>
     );
