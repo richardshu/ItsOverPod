@@ -6,7 +6,7 @@ class Episodes extends Component {
   render() {
     return (
       <Container className="Episodes">
-        <h1>Episodes Page</h1>
+        <h1 className="page-title">Episodes</h1>
       </Container>
     );
   }

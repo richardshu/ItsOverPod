@@ -1,0 +1,10 @@
+.page-title {
+  padding-top: 5rem;
+  padding-bottom: 1.5rem;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+
+.wrapper {
+  opacity: 0.25;
+  transition: 0.45s ease;
+}
