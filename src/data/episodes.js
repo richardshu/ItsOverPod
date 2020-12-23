@@ -1,7 +1,7 @@
 export const EpisodesData = [
   {
     id: "ep20",
-    guest: "Rebekah Hwang",
+    guest: "Rebekah Ramirez",
     title: "The Reality of Being a Teacher",
     description: "Being a teacher is hard but rewarding.",
     date: "December 2, 2020",

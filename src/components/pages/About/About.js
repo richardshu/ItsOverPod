@@ -10,7 +10,7 @@ class About extends Component {
         <h1 className="page-title">About</h1>
         <div className="profile-container">
           <span className="profile-pic-container">
-            <img src={RichAndPat} />
+            <img src={RichAndPat} alt="Rich and Pat" />
           </span>
           <div className="profile-description">
             <p>

@@ -1,4 +1,4 @@
-.Episodes .card-container {
+.Episodes .cards-container {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -6,6 +6,7 @@
 
 .Episodes .card {
   margin-bottom: 1rem;
+  cursor: pointer;
 }
 
 .Episodes .card-title {
@@ -14,4 +15,8 @@
 
 .Episodes .guest-name {
   color: royalblue;
+}
+
+.modal-header {
+  border-bottom: none !important;
 }
