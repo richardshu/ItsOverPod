@@ -12,74 +12,71 @@ class Episodes extends Component {
     };
   }
 
-  openModal = (key) => {
-    this.setState({ showModal: true });
-    this.setState({ selectedEpisode: key });
-  };
-
-  closeModal = () => {
-    this.setState({ showModal: false });
+  toggleModal = (state, key = null) => {
+    this.setState({ showModal: state });
+    if (state) {
+      this.setState({ selectedEpisode: key });
+    }
   };
 
   render() {
     return (
       <Container className="Episodes">
-        <h1 className="page-title">Episodes</h1>
-        <div className="cards-container">
-          {EpisodesData.map((episode, key) => {
+        {this.props.numEpisodes === EpisodesData.length ? (
+          <h1 className="page-title">Episodes</h1>
+        ) : (
+          <span></span>
+        )}
+
+        <div className="episode-cards-container">
+          {EpisodesData.slice(0, this.props.numEpisodes).map((episode, key) => {
             return (
-              <div>
-                <Card
-                  key={key}
-                  style={{ width: "18rem" }}
-                  onClick={() => this.openModal(key)}
-                >
-                  <Card.Img
-                    variant="top"
-                    src={
-                      require(`../../../images/guests/${episode.id}.jpg`)
-                        .default
-                    }
-                    alt={episode.guest}
-                  />
-                  <Card.Body>
-                    <Card.Title>
-                      {episode.title} -
-                      <span className="guest-name"> {episode.guest}</span>
-                    </Card.Title>
-                    <Card.Text>{episode.description}</Card.Text>
-                  </Card.Body>
-                </Card>
-              </div>
+              <Card key={key} onClick={() => this.toggleModal(true, key)}>
+                <Card.Img
+                  variant="top"
+                  src={
+                    require(`../../../images/guests/${episode.id}.jpg`).default
+                  }
+                  alt={episode.guest}
+                />
+                <Card.Body>
+                  <Card.Title>
+                    {episode.title} -
+                    <span className="guest-name"> {episode.guest}</span>
+                  </Card.Title>
+                  <Card.Text>{episode.description}</Card.Text>
+                </Card.Body>
+              </Card>
             );
           })}
 
           <Modal
             show={this.state.showModal}
-            onHide={this.closeModal}
+            onHide={() => this.toggleModal(false)}
             size="xl"
             aria-labelledby="contained-modal-title-vcenter"
             centered
           >
-            <Modal.Header closeButton>
+            <Modal.Header>
               <iframe
                 src={EpisodesData[this.state.selectedEpisode].spotify_url}
+                title={EpisodesData[this.state.selectedEpisode].title}
                 width="100%"
                 height="232"
                 frameborder="0"
                 allowtransparency="true"
                 allow="encrypted-media"
-                title={EpisodesData[this.state.selectedEpisode].title}
               ></iframe>
             </Modal.Header>
-            <Modal.Body>
-              {EpisodesData[this.state.selectedEpisode].description}
-            </Modal.Body>
           </Modal>
         </div>
       </Container>
     );
   }
 }
+
+Episodes.defaultProps = {
+  numEpisodes: EpisodesData.length,
+};
 
 export default Episodes;

@@ -1,0 +1,22 @@
+.recent-guests-section > h1 {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.recent-guests-section .btn-container {
+  text-align: center;
+}
+
+.recent-guests-section .btn {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: rgb(88, 88, 88) !important;
+  border: 0.1rem rgb(88, 88, 88) solid !important;
+}
+
+.recent-guests-section .btn:hover {
+  color: #f2849e !important;
+  border-color: #f2849e !important;
+  background-color: white !important;
+}

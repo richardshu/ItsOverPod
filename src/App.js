@@ -8,28 +8,24 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      sidebarOpen: false,
+      showSidebar: false,
     };
   }
 
-  toggleSidebar = () => {
-    this.setState({ sidebarOpen: !this.state.sidebarOpen });
-  };
-
-  closeSidebar = () => {
-    this.setState({ sidebarOpen: false });
+  toggleSidebar = (state) => {
+    this.setState({ showSidebar: state });
   };
 
   render() {
     return (
       <div className="App">
         <Sidebar
-          sidebarOpen={this.state.sidebarOpen}
+          showSidebar={this.state.showSidebar}
           toggleSidebar={this.toggleSidebar}
         />
         <div
-          className={this.state.sidebarOpen ? "wrapper" : ""}
-          onClick={this.closeSidebar}
+          className={this.state.showSidebar ? "wrapper" : ""}
+          onClick={() => this.toggleSidebar(false)}
         >
           <Switch>
             <Route path="/about" component={About} />

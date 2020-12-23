@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import { PodcastPlatformsData } from "../../../data/podcast-platforms.js";
+import { PodcastPlatformsData } from "../../data/podcast-platforms.js";
 import "./PodcastPlatforms.css";
 
 class PodcastPlatforms extends Component {
   render() {
     return (
       <div className="PodcastPlatforms">
-        <p>Tune in on</p>
+        <h1>Tune In</h1>
         <div className="podcast-platforms-container">
           {PodcastPlatformsData.map((p, key) => {
             return (
@@ -14,7 +14,7 @@ class PodcastPlatforms extends Component {
                 <a target="_blank" rel="noopener noreferrer" href={p.url}>
                   <img
                     src={
-                      require(`../../../images/podcast-platforms/${p.id}.png`)
+                      require(`../../images/podcast-platforms/${p.id}.png`)
                         .default
                     }
                     alt={p.name}

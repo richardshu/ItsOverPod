@@ -1,19 +1,24 @@
-.Episodes .cards-container {
+.Episodes .page-title {
+  text-align: center;
+}
+
+.episode-cards-container {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
-.Episodes .card {
+.episode-cards-container .card {
   margin-bottom: 1rem;
   cursor: pointer;
+  width: 18rem;
 }
 
-.Episodes .card-title {
+.episode-cards-container .card-title {
   font-family: "Source Sans Pro", Helvetica, sans-serif;
 }
 
-.Episodes .guest-name {
+.episode-cards-container .guest-name {
   color: royalblue;
 }
 

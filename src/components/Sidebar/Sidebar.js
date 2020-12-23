@@ -10,32 +10,38 @@ class Sidebar extends Component {
     return (
       <div>
         <FontAwesomeIcon
-          onClick={this.props.toggleSidebar}
+          onClick={() => this.props.toggleSidebar(true)}
           className="sidebar-icon"
           icon={faBars}
         />
 
-        <nav className={this.props.sidebarOpen ? "sidebar active" : "sidebar"}>
+        <nav className={this.props.showSidebar ? "sidebar active" : "sidebar"}>
           <Container>
             <FontAwesomeIcon
-              onClick={this.props.toggleSidebar}
+              onClick={() => this.props.toggleSidebar(false)}
               className="sidebar-icon"
               icon={faTimes}
             />
             <h2 className="sidebar-title">Menu</h2>
             <ul>
               <li className="sidebar-item">
-                <Link to="/" onClick={this.props.toggleSidebar}>
+                <Link to="/" onClick={() => this.props.toggleSidebar(false)}>
                   Home
                 </Link>
               </li>
               <li className="sidebar-item">
-                <Link to="/about" onClick={this.props.toggleSidebar}>
+                <Link
+                  to="/about"
+                  onClick={() => this.props.toggleSidebar(false)}
+                >
                   About
                 </Link>
               </li>
               <li className="sidebar-item">
-                <Link to="/episodes" onClick={this.props.toggleSidebar}>
+                <Link
+                  to="/episodes"
+                  onClick={() => this.props.toggleSidebar(false)}
+                >
                   Episodes
                 </Link>
               </li>
