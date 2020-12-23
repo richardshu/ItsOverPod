@@ -11,7 +11,7 @@ class Sidebar extends Component {
       <div>
         <FontAwesomeIcon
           onClick={() => this.props.toggleSidebar(true)}
-          className="sidebar-icon"
+          className="sidebar-icon sidebar-open-icon"
           icon={faBars}
         />
 

@@ -4,14 +4,14 @@
   right: -100%;
   padding-left: 1rem;
   position: fixed;
-  background-color: antiquewhite;
-  transition: 0.25s ease;
-  z-index: 1;
+  background-color: aliceblue;
+  transition: 1.25s ease;
+  z-index: 2;
 }
 
 .sidebar.active {
   right: 0;
-  transition: 0.25s ease;
+  transition: 0.45s ease;
 }
 
 .sidebar-icon {
@@ -22,6 +22,11 @@
   font-size: 2rem;
   cursor: pointer;
   transition: 0.45s ease;
+}
+
+.sidebar-open-icon {
+  position: fixed;
+  z-index: 1;
 }
 
 .sidebar-icon:hover {
