@@ -63,7 +63,7 @@ class Episodes extends Component {
                 title={EpisodesData[this.state.selectedEpisode].title}
                 width="100%"
                 height="232"
-                frameborder="0"
+                frameBorder="0"
                 allowtransparency="true"
                 allow="encrypted-media"
               ></iframe>

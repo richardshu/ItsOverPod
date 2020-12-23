@@ -6,12 +6,25 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  -webkit-perspective: 10000;
 }
 
 .episode-cards-container .card {
-  margin-bottom: 1rem;
-  cursor: pointer;
   width: 18rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: 0.45s ease;
+}
+
+.episode-cards-container .card:hover {
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+  transform: translateZ(5rem);
+}
+
+.episode-cards-container .card-img-top {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
 }
 
 .episode-cards-container .card-title {
