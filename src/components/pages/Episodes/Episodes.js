@@ -63,11 +63,12 @@ class Episodes extends Component {
           >
             <Modal.Header closeButton>
               <iframe
-                src={EpisodesData[this.state.selectedEpisode].anchor_url}
-                height="auto"
+                src={EpisodesData[this.state.selectedEpisode].spotify_url}
                 width="100%"
-                frameBorder="0"
-                scrolling="no"
+                height="232"
+                frameborder="0"
+                allowtransparency="true"
+                allow="encrypted-media"
                 title={EpisodesData[this.state.selectedEpisode].title}
               ></iframe>
             </Modal.Header>
