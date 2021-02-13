@@ -24,7 +24,9 @@ class App extends Component {
           toggleSidebar={this.toggleSidebar}
         />
         <div
-          className={this.state.showSidebar ? "wrapper" : ""}
+          className={
+            this.state.showSidebar ? "wrapper sidebar-open" : "wrapper"
+          }
           onClick={() => this.toggleSidebar(false)}
         >
           <Switch>

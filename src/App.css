@@ -1,5 +1,9 @@
-.wrapper {
+.wrapper.sidebar-open {
   opacity: 0.25;
+  transition: 0.45s ease;
+}
+
+.wrapper {
   transition: 0.45s ease;
 }
 
