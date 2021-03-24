@@ -1,17 +1,8 @@
-.wrapper.sidebar-open {
-  opacity: 0.25;
-  transition: 0.45s ease;
-}
-
-.wrapper {
-  transition: 0.45s ease;
-}
-
 h1 {
   font-family: "Source Sans Pro", Helvetica, sans-serif;
 }
 
 .page-title {
-  padding-top: 5rem;
   padding-bottom: 1.5rem;
+  text-align: center;
 }

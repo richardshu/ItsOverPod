@@ -1,0 +1,37 @@
+/* navbar */
+
+.Header .nav-link {
+  font-size: 1.15rem;
+  text-align: center;
+  margin-left: 0.1rem;
+  margin-right: 0.1rem;
+}
+
+.Header .nav-link:hover {
+  color: #f2849e !important;
+}
+
+.Header .menu-icon {
+  outline: none !important;
+}
+
+/* banner */
+
+.Header .banner {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.Header .banner a {
+  color: black;
+}
+
+.Header .banner a:hover {
+  text-decoration: none;
+  opacity: 0.75;
+}
+
+.Header .banner img {
+  width: 5rem;
+  padding-right: 0.5rem;
+}

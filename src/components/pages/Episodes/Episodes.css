@@ -1,7 +1,3 @@
-.Episodes .page-title {
-  text-align: center;
-}
-
 .episode-cards-container {
   display: flex;
   justify-content: space-evenly;

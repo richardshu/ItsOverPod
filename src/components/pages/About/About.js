@@ -8,11 +8,13 @@ class About extends Component {
     return (
       <Container className="About">
         <h1 className="page-title">About</h1>
+
         <div className="profile-container">
-          <span className="profile-pic-container">
+          <span className="pfp-container">
             <img src={RichAndPat} alt="Rich and Pat" />
           </span>
-          <div className="profile-description">
+
+          <div className="bio">
             <p>
               What's up fam. Richard Shu and Patrick Ma go <em>way</em> back to
               elementary school. We met each other in 5th grade and did a lot of

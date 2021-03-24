@@ -1,18 +1,22 @@
-.profile-container {
-  display: inline-block;
+.About .profile-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.profile-pic-container {
+.About .pfp-container {
   float: left;
   padding: 1rem;
   max-width: 30rem;
 }
 
-.profile-pic-container img {
+.About .pfp-container img {
   width: 100%;
   border-radius: 0.5rem;
 }
 
-.profile-description {
+.About .bio {
+  max-width: 38rem;
   padding: 1rem;
 }
