@@ -13,6 +13,7 @@
   margin-bottom: 1rem;
   color: rgb(88, 88, 88) !important;
   border: 0.1rem rgb(88, 88, 88) solid !important;
+  box-shadow: none !important;
 }
 
 .recent-guests-section .btn:hover {

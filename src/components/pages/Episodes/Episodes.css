@@ -1,7 +1,7 @@
 .episode-cards-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 18rem);
   justify-content: space-evenly;
-  flex-wrap: wrap;
 }
 
 .episode-cards-container .card {
