@@ -4,4 +4,4 @@
 
 Join Rich and Pat as they navigate college-adult life in LA and bring on their friends to share their stories and grand projects with the world. New episode every Wednesday!
 
-View the website: [itsoverpod.com](https://itsoverpod.com/)
+View the website here: [itsoverpod.netlify.app](https://itsoverpod.netlify.app/)
