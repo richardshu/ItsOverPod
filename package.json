@@ -1,7 +1,7 @@
 {
-  "name": "itsoverpod.com",
+  "name": "itsoverpod",
   "version": "0.1.0",
-  "homepage": "https://itsoverpod.com",
+  "homepage": "https://itsoverpod.netlify.app/",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
